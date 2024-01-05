@@ -9,10 +9,15 @@ StoryLoader::StoryLoader(string fileName) {
         vector<string> checked;
         //ファイル読み込み, データ変換・保存
         SetFileOfText(fileName, checked);
+        checked.clear();        //要素削除
     }
     catch (const runtime_error& e) {
         cout << e.what() << endl;
     }
+}
+
+StoryLoader::~StoryLoader() {
+    loadedTexts.clear();
 }
 
 string StoryLoader::GetNameAddedTxt(string fileName) {

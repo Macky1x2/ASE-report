@@ -11,6 +11,7 @@ private:
 	string text;		//1行テキストリソースそのまま
 public:
 	Normal1LineData(string);		//引数(1行テキストリソース)
+	~Normal1LineData();
 	string GetText();				//表示テキスト取得
 	virtual void Operate(GameManager&);					//ユーザー操作
 };

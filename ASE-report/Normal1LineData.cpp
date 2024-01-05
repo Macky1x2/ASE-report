@@ -5,6 +5,10 @@ Normal1LineData::Normal1LineData(string text) {
 	this->text = text;
 }
 
+Normal1LineData::~Normal1LineData() {
+
+}
+
 string Normal1LineData::GetText() {
 	return text;
 }
