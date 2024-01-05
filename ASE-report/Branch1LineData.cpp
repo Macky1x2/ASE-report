@@ -19,6 +19,10 @@ Branch1LineData::Branch1LineData(string text) :Normal1LineData(text){
 	branchNames.push_back(text);		//ÅŒã‚Ì—v‘f‚ğ’Ç‰Á
 }
 
+Branch1LineData::~Branch1LineData() {
+	branchNames.clear();
+}
+
 vector<string> Branch1LineData::GetBranchNames() {
 	return branchNames;
 }

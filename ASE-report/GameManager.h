@@ -15,6 +15,7 @@ private:
 	void PlayOneFile(vector<shared_ptr<Normal1LineData> >);
 public:
 	GameManager(StoryLoader&);
+	~GameManager();
 	void SetRecentInput(string);
 	string GetRecentInput();
 	void SetNextFile(string);

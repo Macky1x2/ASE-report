@@ -17,6 +17,10 @@ GameManager::GameManager(StoryLoader& loader) {
 	}
 }
 
+GameManager::~GameManager() {
+
+}
+
 void GameManager::PlayOneFile(vector<shared_ptr<Normal1LineData> > fileData) {
 	//各行に対し、プレイヤーが操作	fileData[i]はBranch1LineData型の場合もある
 	for (int i = 0; i < fileData.size(); i++) {
