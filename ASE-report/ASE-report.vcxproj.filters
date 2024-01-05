@@ -53,6 +53,18 @@
     <Text Include="q2_3.txt">
       <Filter>リソース ファイル</Filter>
     </Text>
+    <Text Include="space_test.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="manyoption_test.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="firstoption_test.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="main_test.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StoryLoader.h">

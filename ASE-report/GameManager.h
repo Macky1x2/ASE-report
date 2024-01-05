@@ -9,8 +9,8 @@ class StoryLoader;
 
 class GameManager {
 private:
-	string recentInput;
-	string nextFile;
+	string recentInput;		//最も最近のユーザー入力
+	string nextFile;		//1つのファイル読破後の、次のファイル。　@branchによって指定されるが、@branchがない場合ゲームは終了する。
 
 	void PlayOneFile(vector<shared_ptr<Normal1LineData> >);
 public:
