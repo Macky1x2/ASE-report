@@ -3,10 +3,10 @@
 #include "Normal1LineData.h"
 #include "define.h"
 
-StoryLoader::StoryLoader() {
+StoryLoader::StoryLoader(string fileName) {
     try {
         //ファイル読み込み, データ変換・保存
-        SetFileOfText(FIRST_FILE);
+        SetFileOfText(fileName);
     }
     catch (const runtime_error& e) {
         cout << e.what() << endl;

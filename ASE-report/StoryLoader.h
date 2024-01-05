@@ -16,6 +16,6 @@ private:
 	string GetNameAddedTxt(string);
 	void SetFileOfText(string);
 public:
-	StoryLoader();
+	StoryLoader(string);
 	vector<shared_ptr<Normal1LineData> > GetLoadedText(string);
 };

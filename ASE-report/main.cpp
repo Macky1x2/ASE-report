@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
 	//ストーリーデータ読み込み, 変換
-	StoryLoader loader = StoryLoader();
+	StoryLoader loader = StoryLoader(FIRST_FILE);
 
 	//ストーリーゲーム進行
 	GameManager manager = GameManager(loader);
