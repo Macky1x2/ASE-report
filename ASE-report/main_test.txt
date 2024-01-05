@@ -1,0 +1,3 @@
+これはテストモードです。次のうちから行いたいテストを選択してください。
+1:空行テスト, 2:たくさんの選択肢テスト, 3:最初が選択肢であるテスト
+@branch space_test manyoption_test firstoption_test

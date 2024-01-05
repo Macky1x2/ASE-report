@@ -4,6 +4,7 @@
 #include "define.h"
 
 StoryLoader::StoryLoader(string fileName) {
+    firstFile = fileName;
     try {
         //ファイル読み込み, データ変換・保存
         SetFileOfText(fileName);
@@ -52,4 +53,8 @@ void StoryLoader::SetFileOfText(string fileName) {
 
 vector<shared_ptr<Normal1LineData> > StoryLoader::GetLoadedText(string fileName) {
     return loadedTexts[fileName];
+}
+
+string StoryLoader::GetFirstFile() {
+    return firstFile;
 }

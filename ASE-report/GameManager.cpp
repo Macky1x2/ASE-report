@@ -5,7 +5,7 @@
 
 GameManager::GameManager(StoryLoader& loader) {
 	recentInput = "";			//最初は空行を直前の入力とする
-	nextFile = FIRST_FILE;		//最初に読み込むファイル
+	nextFile = loader.GetFirstFile();		//最初に読み込むファイル
 
 	while (true) {
 		if (nextFile == "") {	//次ファイル以降時、nextFileが空文字列であればゲーム終了

@@ -146,13 +146,17 @@
     <ClCompile Include="StoryLoader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="firstoption_test.txt" />
     <Text Include="main.txt" />
+    <Text Include="main_test.txt" />
+    <Text Include="manyoption_test.txt" />
     <Text Include="q1_1.txt" />
     <Text Include="q1_2.txt" />
     <Text Include="q1_3.txt" />
     <Text Include="q2_1.txt" />
     <Text Include="q2_2.txt" />
     <Text Include="q2_3.txt" />
+    <Text Include="space_test.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Branch1LineData.h" />
