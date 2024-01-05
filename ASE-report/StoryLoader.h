@@ -15,7 +15,7 @@ private:
 	map<string, vector<shared_ptr<Normal1LineData> > > loadedTexts;		//辞書<ファイル名, 1行データリスト>
 
 	string GetNameAddedTxt(string);
-	void SetFileOfText(string);
+	void SetFileOfText(string, vector<string>&);
 public:
 	StoryLoader(string);
 	vector<shared_ptr<Normal1LineData> > GetLoadedText(string);

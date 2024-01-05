@@ -7,7 +7,13 @@ Branch1LineData::Branch1LineData(string text) :Normal1LineData(text){
 	
 	int spaceNum;
 	while ((spaceNum = text.find(" ")) != string::npos) {		//q1_1 q1_2 q1_3 : 4
-		branchNames.push_back(text.substr(0, spaceNum));		//q1_1 q1_2 q1_3 から q1_1を取り出す
+		string option = text.substr(0, spaceNum);
+		//まだ追加されていない要素なら追加
+		//vector<string>::iterator itr = find(branchNames.begin(), branchNames.end(), option);
+		//if (itr == branchNames.end()) {
+		//	branchNames.push_back(option);		//q1_1 q1_2 q1_3 から q1_1を取り出し、要素として追加
+		//}
+		branchNames.push_back(option);		//q1_1 q1_2 q1_3 から q1_1を取り出し、要素として追加
 		text = text.substr(spaceNum + 1);						//q1_1 q1_2 q1_3 => q1_2 q1_3
 	}
 	branchNames.push_back(text);		//最後の要素を追加
